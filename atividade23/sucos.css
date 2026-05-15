@@ -1,0 +1,23 @@
+body{
+    font-family: Arial;
+}
+.azul-marinho{
+    color: #007e7e;
+}
+.verde{
+    color: green;
+}
+.azul{
+    color: blue;
+}
+.roxo{
+    color: purple;
+}
+.marron{
+    color: maroon;
+}
+
+.aviso{
+    color: grey;
+    text-align: center;
+}
