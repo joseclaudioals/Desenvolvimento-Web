@@ -1,0 +1,98 @@
+body{
+    margin: 2% 6%;
+    background-color: rgb(168, 148, 122);
+    font-family: arial;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.logo > img{
+    width: 400px;
+}
+
+header div{
+    background-color: white;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header span{
+    padding: 10px
+}
+
+.main_card {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top:20px;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.5);
+}
+
+.main_card > img{
+    padding: 7px 20px;
+    width: 100%;
+    height: auto;
+}
+
+.container{
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.card{
+    background-color: white;
+    width: 22%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.5);
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+}
+
+.card p{
+    font-size: 15px;
+    text-align: justify
+}
+
+.card a{
+    color: black;
+    align-self: flex-end;
+}
+
+footer{
+    height: 55px;
+    background-color: white; 
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.5);
+}
+
+.esquerda{
+    font-size: 10pt;
+    width: 40%;
+    display: flex;
+    padding: 15px;
+    justify-content: space-around;
+}
+
+.direita{
+    font-size: 15pt;
+    width: 30%;
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+}
