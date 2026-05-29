@@ -1,0 +1,22 @@
+body{
+    background-image: url(final_fantasy/fundo_final.jpg);
+}
+
+h1{
+    text-align: right;
+    background-color: #ccbb99;
+}
+
+p{
+    color: #ccbb99;
+    font-weight: bold;
+    text-align: justify;
+    font-weight: bold;
+    text-indent: 5%;
+}
+
+h6{
+    font-style: italic;
+    background-color: #ccbb99;
+}
+
