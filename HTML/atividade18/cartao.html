@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartao de credito</title>
+</head>
+<body>
+    <form name="cartao_credito" method="post">
+        <table border="2px", cellpadding="7" >
+            <tr>
+                <td > <label for="numero_cartao">Número:</label> </td>
+                <td> <input name="numero_cartao" type="text"> </td>
+            </tr>
+            <tr>
+                <td> <label for="bandeira">Bandeira:</label>
+                <td> 
+                    <input type="radio" name="bandeira"/> 
+                    <img src="exec_img_form/visa.jpg" alt="Bandeira VISA" align="center"/> <br/>
+                    <input type="radio" name="bandeira"/> 
+                    <img src="exec_img_form/master.jpg" alt="Bandeira VISA" align="center"/> <br/>
+                    <input type="radio" name="bandeira"/> 
+                    <img src="exec_img_form/american.jpg" alt="Bandeira VISA" align="center"/>
+                </td>
+            </tr>
+            <tr>
+                <td> <label for="validade">Validade: </label></td>
+                <td align="left">
+                    <select name="validade">
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                    </select>   
+                </td>
+                
+            </tr>
+        </table>
+        
+
+    </form>
+</body>
+</html>

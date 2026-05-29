@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola Virtual</title>
+</head>
+<body>
+    <div align="center">
+        <h1>Escola Virtual</h1>
+        <h2>Formulario de Pré-Matrícula</h2>
+        <hr width="80%"/>
+    </div>
+    <form method="post" name="matriculaForm">
+        <table border="2px"  width="75%" align="center">
+            <tr>
+                <td> 
+                    <p align="left">Dados Pessoais:</p>
+                    <div align="center">
+                        <label for="nome_aluno">Nome do Aluno:</label>
+                        <input name="nome_matricula" type="text" maxlength="255">
+                        <br/>
+                        <label>Nascimento(dd/mm/aa):</label>
+                        <input name="dia" type="text" maxength="2" size="2"/>
+                        <span>/</span>
+                        <input name="mes" type="text" maxength="2" size="2"/>
+                        <span>/</span>
+                        <input name="ano" type="text" maxength="4" size="4"/>
+                        <br/>
+                        <label for="nome_mae">Nome do Mãe:</label>
+                        <input name="nome_matricula" type="text" maxlength="255">
+                        <br/>
+                        <label for="nome_pai">Nome do Pai:</label>
+                        <input name="nome_matricula" type="text" maxlength="255">
+                        <br/>
+                        <label>Telefone: DDD (</label>
+                        <input name="ddd" type="text" maxlength="2" size="2">
+                        <label>) Tel: </label>
+                        <input name="telefone" type="text" maxlength="9" size="9">
+                        <label>Ramal: </label>
+                        <input name="ramal" type="text" maxlength="5" size="4">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p align="left">Informações de matricula:</p>
+                    <div style="display:grid; grid-template-columns: 33% 33% 33%;" align="left">
+                        <div>
+                        <label for="serie">Serie:</label> <br/>
+                            <select>
+                                <option name="serie" value="pre-escolar">pré-escolar</option>
+                                <option name="serie" value="fundamental_i">fundamental I</option>
+                                <option name="serie" value="fundamental_ii">fundamental II</option>
+                                <option name="serie" value="ensino_medio">ensino medio</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>Turno</label> <br/>
+                            <input name="turno" type="radio" value="manha"> Manhã <br/>
+                            <input name="turno" type="radio" value="tarde"> Tarde
+                        </div>
+                        <div>
+                            <label for="atividades_extras">Atividades Extracurriculares</label> <br/>
+                            <input name="atividades_extras" type="checkbox" value="informatica"> Informática <br/>
+                            <input name="atividades_extras" type="checkbox" value="musica"> Música <br/>
+                            <input name="atividades_extras" type="checkbox" value="balet"> Balet <br/>
+                            <input name="atividades_extras" type="checkbox" value="pintura"> Pintura <br/>
+                            <input name="atividades_extras" type="checkbox" value="judo"> Judô <br/>
+                            <input name="atividades_extras" type="checkbox" value="futebol"> Futebol <br/>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div align="center">
+            <input name="enviar" type="submit" value="Envia Formulário"> 
+            <input name="limpar" type="reset" value="Limpa Campos">  
+        </div>
+    </form>
+</body>
+</html>
