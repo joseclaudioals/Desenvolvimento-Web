@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculo de fatorial</h1>
+    <p>Escreva um número (entre 1 e 21) na caixa a seguir e te mostrarei o Fatorial dele</p>
+    <input type="number" min="1" id="n">
+    <button onclick="fatorial()" style="background-color: green; color: white">Fatorial</button>
+    <p>Preencha os dados acima e aperte o botão</p>
+    <p id="fatorial"></p>
+
+    <script>
+        function fatorial(){
+            let n = parseInt(document.getElementById('n').value);
+
+            if(n>21 || n<1 || isNaN(n)){
+                document.getElementById('fatorial').innerHTML = "Numero invalido, ele deve ser maior que 0 e menor que 22";
+                return;
+            }
+
+            let s = "<h2> Calculando o fatorial de " + n + "</h2>" + n;
+            let fat = n;
+            for(let i = n-1; i>0; i--){
+                s+= " x " + i;
+                fat*=i;
+            }
+            s += " = " + fat;
+            document.getElementById('fatorial').innerHTML = s;
+        }
+
+    </script>
+</body>
+</html>

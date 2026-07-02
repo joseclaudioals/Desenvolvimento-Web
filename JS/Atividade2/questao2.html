@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Super Tabuada</h1>
+    <p>Escreva um número na caixa a seguir e te mostrarei a tabuada dele</p>
+    <span>Número:</span>
+    <input type="number" min="1" id="n">
+    <button onclick="tabuada()" style="background-color: green; color: white">Tabuada</button>
+    <p id="tabuada"></p>
+
+    <script>
+        function tabuada(){
+            let n = parseInt(document.getElementById('n').value);
+            if (isNaN(n)){
+                document.getElementById('tabuada').innerHTML = 'Numero invalido';
+                return;
+            }
+            let s = '<h2> Tabuada de '+ n + '<br/>';
+            for(let i = 1; i<=10; i++){
+                s+= n + ' x ' + i + ' = ' + n*i + '<br/>';
+            }
+            document.getElementById('tabuada').innerHTML = s;
+        }
+    </script>
+</body>
+</html>

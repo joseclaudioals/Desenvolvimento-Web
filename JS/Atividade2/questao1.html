@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Descubra a estação do ano</h1>
+    <button onclick="informe()">Informe o mês aqui</button>
+    <p id="info"></p>
+
+    <script>
+        function informe(){
+            let mes = prompt("Digite o mês em extenso (ex: setembro)");
+            mes = mes.toLowerCase();
+            let estacao;
+
+            if(mes == 'janeiro' || mes == 'fevereiro' || mes == 'março')
+                estacao = 'INVERNO';
+            else if(mes == 'abril' || mes == 'maio' || mes == 'junho')
+                estacao = 'PRIMAVERA';
+            else if(mes == 'julho' || mes == 'agosto' || mes == 'setembro')
+                estacao = 'VERÂO';
+            else if(mes == 'outubro' || mes == 'novembro' || mes == 'dezembro')
+                estacao = 'OUTONO';
+            else{
+                document.getElementById('info').innerHTML = "Input invalido";
+                return;
+            }
+            
+            document.getElementById('info').innerHTML = "No mês de " + mes + ", estamos na estação " + estacao;
+        }
+    </script>
+</body>
+</html>

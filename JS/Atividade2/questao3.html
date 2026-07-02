@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Contar de 1 a 10 (mostrando só os pares)</h1>
+    <button onclick = "contar()">Contar de 1 a 10</button>
+    <p>Aperte o boao acima para contar</p>
+    <h4>Numeros pares de 1 até 10</h4>
+    <p id="numeros"></p>
+    
+    <script>
+        function contar(){
+            let s = '';
+            let n = 2;
+            for(let i = 0; i<5; i++){
+                s+= n + "->";
+                n+=2;
+            }
+            document.getElementById('numeros').innerHTML = s;
+        }
+    </script>
+</body>
+</html>
