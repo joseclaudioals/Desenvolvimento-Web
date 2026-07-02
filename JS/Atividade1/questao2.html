@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Data Hoje</h1>
+    <p id="date"></p>
+
+    <button onclick="
+        let d = new Date();
+        const f = {day: 'numeric', month: 'long', year: 'numeric'};
+        d = d.toLocaleString('pt-BR', f);
+        document.getElementById('date').innerHTML = d;
+    ">Aperte aqui</button>
+</body>
+</html>

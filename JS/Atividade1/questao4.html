@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <p>Operações <br/>
+    + = adição <br/>
+    - = subtracao <br/>
+    x = multiplicação <br/>
+    / = divisão <br/>
+    </p>
+    <input type="text" id="exp">
+    <button onclick = 'calcular()'>calcular</button>
+    <p>Resultado: <span id="resultado"></span></p>
+
+    <script>
+        function calcular(){
+            let textoExpressao = document.getElementById('exp').value;
+            
+            let areaResultado = document.getElementById('resultado');
+
+            try {
+                let valorFinal = eval(textoExpressao);
+                areaResultado.innerHTML = valorFinal;
+                
+            } catch (erro) {
+                areaResultado.innerHTML = "Erro: Expressão inválida";
+            }
+        }
+
+    </script>
+</body>
+</html>
