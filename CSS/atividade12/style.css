@@ -1,0 +1,57 @@
+body{
+    background-color: tomato;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.morango{
+    color: white;
+    font-size: 150px;
+    position: relative;
+    z-index: 2;
+    font-family: Arial;
+    font-weight: bolder;
+
+    cursor: pointer;
+}
+
+.lata{
+    height: 75vh;
+    position: absolute;
+    bottom:-500px;
+    z-index: 5;
+
+    pointer-events: none;
+
+    transform: translateY(0);
+    transition: transform 1s ease;
+}
+
+.morango_img{
+    z-index: 1;
+    height: 75vh;
+    position: absolute;
+    bottom: -750px;
+    
+}
+
+.morango:hover ~ .lata{
+    transform: translateY(-250px);
+}
+
+@keyframes morango_subir{
+    0%{transform: translateY(0);}
+    50%{transform: translateY(-750px);}
+    100%{transform: translateY(0);}
+}
+
+.morango:hover ~ .morango_img{
+    animation: morango_subir 2s ease-in-out;
+}
