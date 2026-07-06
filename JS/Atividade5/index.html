@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <h1>Prova Prátiva - enquete</h1>
+    </div>
+    <fieldset>
+        <legend>Enquete</legend>
+        <p>1. Qual linguagem de Programação você mais gosta ?</p>
+        <form>
+            <input type="radio" name="enquete" value="python"> Python <br>
+            <input type="radio" name="enquete" value="php"> PHP <br>
+            <input type="radio" name="enquete" value="java"> Java <br>
+            <input type="radio" name="enquete" value="c++"> C++ <br>
+            
+            <div class="centro">
+                <button type="submit" id="btn">Votar</button>
+            </div>
+        </form>
+    </fieldset>
+    <hr/>
+    <fieldset>
+        <legend>Resultado</legend>
+        <div class="esquerda">
+            <ul >
+                <li>Python - <span id="python_porc"></span></li>
+                <hr id="python-line"/>
+                <li>PHP - <span id="php_porc"></span></li>
+                <hr id="php-line"/>
+                <li>Java - <span id="java_porc"></span></li>
+                <hr id="java-line"/>
+                <li>C++ - <span id="c_porc"></span></li>
+                <hr id="c-line"/>
+            </ul>
+        </div>
+    </fieldset>
+
+    <span class="copy centro">&copy Sistema de Enquete - IFPI 2026</span>
+    <hr/>
+
+    <script src="main.js"></script>
+</body>
+</html>

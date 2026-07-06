@@ -1,0 +1,75 @@
+body{
+    margin: 20px;
+    
+}
+h1{
+    background-color: rgb(194, 194, 194);
+    text-align: center;
+}
+
+fieldset{
+    border-color: black;
+}
+
+ul{
+    width: 100%;
+}
+
+.centro{
+    display:flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.esquerda{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+}
+
+
+#python-line{
+    --tamanho_line: 0%;
+
+    margin-left: 0;
+    border: none;
+    height: 18px;
+    background-color: red;
+    width: var(--tamanho_line)
+}
+
+#php-line{
+    --tamanho_line: 0%;
+
+    margin-left: 0;
+    border: none;
+    height: 18px;
+    background-color: green;
+    width: var(--tamanho_line)
+}
+
+#java-line{
+    --tamanho_line: 0%;
+
+    margin-left: 0;
+    border: none;
+    height: 18px;
+    background-color: blue;
+    width: var(--tamanho_line)
+}
+
+#c-line{
+    --tamanho_line: 0%;
+
+    margin-left: 0;
+    border: none;
+    height: 18px;
+    background-color: yellow;
+    width: var(--tamanho_line)
+}
+
+.copy{
+    text-align: center;
+    font-size: 11pt;
+}
