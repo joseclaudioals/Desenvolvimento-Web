@@ -1,0 +1,18 @@
+{
+    "loja": "TechStore",
+    "produtos": [ {
+        "id": 1,
+        "nome": "Teclado",
+        "categoria": "Periféricos",
+        "preco": 120.00,
+        "estoque": 15
+        },
+        {
+        "id": 2,
+        "nome": "Mouse",
+        "categoria": "Periféricos",
+        "preco": 80.00,
+        "estoque": 5
+        }
+    ]
+}
