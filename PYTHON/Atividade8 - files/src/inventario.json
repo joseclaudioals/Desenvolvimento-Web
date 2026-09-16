@@ -1,0 +1,14 @@
+{
+    "monitor": {
+        "nome": "monitor",
+        "quantidade": 5
+    },
+    "teclado": {
+        "nome": "teclado",
+        "quantidade": 19
+    },
+    "notebook": {
+        "nome": "notebook",
+        "quantidade": 3
+    }
+}
