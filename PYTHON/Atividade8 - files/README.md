@@ -4,6 +4,13 @@
 **Exercício 2**: Usando JSON, crie um arquivo `inventario.json` que armazene produtos e quantidades de uma loja. Crie funções para adicionar um produto, remover um produto e listar todos os produtos. 3. 
 
 
-
 **Exercício 3**: Leia um arquivo de texto `diario.txt` e conte o número de palavras nele. Adicione uma função que, ao rodar, acrescente a data e o total de palavras no final do arquivo.
 
+
+**Exercício 4** .  Desenvolva um programa em Python que implemente um contador de acessos utilizando um arquivo para armazenar a quantidade de vezes que o sistema foi acessado.
+
+A cada execução do programa:
+1. O programa deverá ler do arquivo contador.txt o número atual de acessos.
+2. Incrementar o contador em 1.
+3. Gravar o novo valor no arquivo.
+4. Exibir na tela a mensagem:
