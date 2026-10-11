@@ -1,0 +1,1 @@
+A atividade consiste em desenvolver uma aplicação simples utilizando Streamlit e uma API online de cartas. O sistema deverá acessar a API, receber os dados no formato JSON e apresentar na tela as informações e a imagem de uma carta escolhida ou sorteada. O objetivo é praticar o consumo de APIs, leitura de dados JSON e criação de uma interface simples com Python e Streamlit.
